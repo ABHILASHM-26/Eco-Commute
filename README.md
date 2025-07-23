@@ -26,6 +26,12 @@ To encourage a sustainable shift from private vehicle usage to public transporta
 - Help page with usage instructions and contact support links
 - LinkedIn footer link added to home page
 - Theme redesigned to use light, simple colors
+
+- And To Run This projects in your systems the commands you need to use are :
+- For Backend :
+- python manage.py runserver
+- For Frontend :
+- npm start
 ## 📞 Contact
 
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out:
