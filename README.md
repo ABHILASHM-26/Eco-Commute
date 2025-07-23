@@ -1,0 +1,39 @@
+# 🚍 EcoCommute – Gamification-Based Public Transport Adoption
+
+EcoCommute is a web application designed to promote public transport usage through **gamification**. It rewards users with points and tokens for every kilometer they travel using public transport, helping reduce traffic congestion and carbon emissions in urban areas.
+
+## 🌟 Project Goal
+
+To encourage a sustainable shift from private vehicle usage to public transportation by making the process rewarding and interactive.
+
+## 🔧 Tech Stack
+
+- **Frontend**: React.js
+- **Backend**: Django REST Framework
+- **Database**: sqlite3
+- **Authentication**: Email + Password
+- **Other**: Leaflet (for maps), CSS Modules
+
+## ✅ Features Developed So Far
+
+- User registration & login
+- Home page with app overview and team message
+- Real-time UI with React and Leaflet integration (map setup complete)
+- User dashboard with token tracking and carbon emission savings (UI ready)
+- Ride booking UI implemented
+- Admin dashboard (locations editable/deletable)
+- Film Location Finder backend using Node.js and MongoDB (migrating data)
+- Help page with usage instructions and contact support links
+- LinkedIn footer link added to home page
+- Theme redesigned to use light, simple colors
+## 📞 Contact
+
+If you have any questions, suggestions, or would like to collaborate, feel free to reach out:
+
+- **Name**: Abhilash M  
+- **Email**: abhilashm1344@gmail.com 
+- **Phone**: +91-9014578545
+- **LinkedIn**: ([https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
+- **GitHub**: [github.com/your-username](https://github.com/ABHILASM-26)
+
+We’re always open to feedback and partnerships to make public transport better and greener!
