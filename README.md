@@ -40,7 +40,7 @@ If you have any questions, suggestions, or would like to collaborate, feel free 
 - **Name**: Abhilash M  
 - **Email**: abhilashm1344@gmail.com 
 - **Phone**: +91-9014578545
-- **LinkedIn**: [https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
+- **LinkedIn**: [https://www.linkedin.com/in/Abhilash M](https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
 - **GitHub**: [github.com/ABHILASHM-26](https://github.com/ABHILASM-26)
 
 We’re always open to feedback and partnerships to make public transport better and greener!
