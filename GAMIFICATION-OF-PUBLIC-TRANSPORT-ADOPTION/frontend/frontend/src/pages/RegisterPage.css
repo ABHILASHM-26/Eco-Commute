@@ -1,0 +1,98 @@
+/* Register Page */
+.register-page {
+  background: linear-gradient(to right, #f9f9f9, #323030);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.register-form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 5px;
+  text-align: left;
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #888;
+}
+
+button.submit-button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #dcdcdc, #b0b0b0);
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button.submit-button:hover {
+  background: linear-gradient(135deg, #bcbcbc, #999);
+}
+
+/* Error and Success Messages */
+.error-message, .success-message {
+  font-size: 1rem;
+  color: #f44336; /* red for errors */
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.success-message {
+  color: #4caf50; /* green for success */
+}
+
+@media (max-width: 768px) {
+  .register-form {
+    width: 90%;
+  }
+}

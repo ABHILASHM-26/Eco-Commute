@@ -1,0 +1,110 @@
+/* Login Page Styling */
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f9f9f9, #424141);
+  padding: 20px;
+}
+
+.welcome-text {
+  font-size: 2rem;
+  color: #333; /* Dark grey text */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-form {
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  color: #f0ecec; /* Dark grey for labels */
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #989696; /* Light grey border */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #7e7c7c; /* Light background */
+}
+
+.form-input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+.error-message {
+  color: #721c24; /* Dark red for error messages */
+  background-color: #f8d7da; /* Light red background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: #155724; /* Dark green for success messages */
+  background-color: #d4edda; /* Light green background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: #007bff; /* Blue background for the button */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .welcome-text {
+    font-size: 1.6rem;
+  }
+
+  .form-label {
+    font-size: 1rem;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+  }
+}

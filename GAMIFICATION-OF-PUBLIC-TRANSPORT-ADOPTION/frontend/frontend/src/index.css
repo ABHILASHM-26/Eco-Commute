@@ -1,0 +1,25 @@
+/* index.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dashboard {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #e0ffe0;
+  border: 2px solid #55aa55;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #2e7d32;
+}

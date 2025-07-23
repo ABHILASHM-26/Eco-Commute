@@ -1,0 +1,75 @@
+/* Token Redemption Page */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f9f9f9, #4c4b4b);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  background-color: #ffffff; /* White background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333; /* Dark grey color */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555; /* Lighter grey for paragraph */
+  text-align: center;
+  line-height: 1.5;
+}
+
+.message {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.success {
+  background-color: #d4edda; /* Light green for success messages */
+  color: #155724; /* Dark green for success message text */
+}
+
+.error {
+  background-color: #f8d7da; /* Light red for error messages */
+  color: #721c24; /* Dark red for error message text */
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .message {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,39 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Hidden by default (slide out) */
+    width: 250px;
+    height: 100%;
+    background-color: #d5d5d5;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease; /* Smooth slide */
+    padding-top: 60px; /* Adjust if you have top bar */
+    z-index: 998;
+  }
+  
+  .navbar.open {
+    right: 0; /* Slide in */
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  
+  .navbar a:hover {
+    color: #ffffff;
+  }
+  
