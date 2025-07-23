@@ -30,9 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key')
 DEBUG = False
 
 
-ALLOWED_HOSTS = [ 'tansport_project.onrender.com',
-    'localhost',
-    '127.0.0.1']
+ALLOWED_HOSTS = ['eco-commute.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
