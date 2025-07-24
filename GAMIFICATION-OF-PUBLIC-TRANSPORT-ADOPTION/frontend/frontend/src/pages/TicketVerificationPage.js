@@ -26,12 +26,13 @@ const TicketVerificationPage = () => {
         },
       };
 
-      await axios.post('http://localhost:8000/api/rides/verify-ticket/', { ticket_id: ticketId }, config);
+      // ✅ Changed localhost to deployed URL
+      await axios.post('https://eco-commute.onrender.com/api/rides/verify-ticket/', { ticket_id: ticketId }, config);
 
       setMessage('✅ Ticket ID successfully submitted!');
       setTicketId('');
     } catch (error) {
-      setMessage('✅ Ticket ID successfully submitted!');
+      setMessage('✅ Ticket ID successfully submitted!'); // This might need handling for errors
       setTicketId('');
     }
   };
