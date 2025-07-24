@@ -17,7 +17,7 @@ const ProfilePage = () => {
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem('accessToken');  // ✅ match the key used in LoginPage.js
     localStorage.removeItem('username');
     localStorage.removeItem('email');
     navigate('/login');
