@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'; // Import your existing styles
+import '../App.css';
 import './RegisterPage.css';
+import API_BASE_URL from '../config'; // ✅ Import the API base URL
+
 const RegisterPage = () => {
   const [formData, setFormData] = useState({
     email: '',
@@ -11,7 +13,7 @@ const RegisterPage = () => {
   });
 
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState(''); // New success state
+  const [success, setSuccess] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -22,13 +24,11 @@ const RegisterPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:8000/api/users/register/', formData);
+      const response = await axios.post(`${API_BASE_URL}/api/users/register/`, formData); // ✅ updated URL
       if (response.status === 201) {
         setSuccess('Registration successful! Redirecting to homepage...');
         setError('');
         localStorage.setItem('username', formData.name);
-        
-        // After 2 seconds, navigate to homepage
         setTimeout(() => {
           navigate('/');
         }, 2000);
@@ -79,7 +79,6 @@ const RegisterPage = () => {
           />
         </div>
 
-        {/* Show error or success messages */}
         {error && <p className="error-message">{error}</p>}
         {success && <p className="success-message">{success}</p>}
 
