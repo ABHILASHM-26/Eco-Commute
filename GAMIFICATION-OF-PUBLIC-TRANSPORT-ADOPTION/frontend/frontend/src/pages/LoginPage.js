@@ -1,19 +1,15 @@
-// ✅ All imports go at the top
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import './LoginPage.css';
-import API_BASE_URL from '../config'; // ✅ Correct import
+import API_BASE_URL from '../config'; // ✅ Make sure this is correct
 
 const LoginPage = () => {
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    email: '',
-    password: ''
-  });
-
-  const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -28,49 +24,51 @@ const LoginPage = () => {
       if (response.status === 200) {
         const { token, name, email } = response.data;
 
-        localStorage.setItem('token', token); // or 'accessToken'
-        localStorage.setItem('username', name || email); // fallback to email
-        localStorage.setItem('email', email);
+        localStorage.setItem('token', token);
+        localStorage.setItem('username', name || email || 'User');
+        localStorage.setItem('email', email || formData.email);
 
-        setMessage('✅ Login successful! Redirecting...');
-        setTimeout(() => {
-          navigate('/');
-        }, 1500);
+        setSuccess('✅ Login successful! Redirecting to homepage...');
+        setError('');
+
+        setTimeout(() => navigate('/'), 1500);
       }
     } catch (err) {
-      setMessage('❌ Login failed. Please check your credentials.');
+      setError('❌ Login failed. Please check your credentials.');
+      setSuccess('');
     }
   };
 
   return (
     <div className="login-page">
-      <h1 className="page-title">Login</h1>
+      <h1 className="welcome-text">Login</h1>
       <form onSubmit={handleSubmit} className="login-form">
-        <div className="input-group">
-          <label>Email</label>
-          <input 
-            type="email" 
-            name="email" 
-            value={formData.email} 
-            onChange={handleChange} 
-            required 
-            className="input-field"
+        <div className="form-group">
+          <label className="form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="form-input"
           />
         </div>
 
-        <div className="input-group">
-          <label>Password</label>
-          <input 
-            type="password" 
-            name="password" 
-            value={formData.password} 
-            onChange={handleChange} 
-            required 
-            className="input-field"
+        <div className="form-group">
+          <label className="form-label">Password</label>
+          <input
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+            required
+            className="form-input"
           />
         </div>
 
-        {message && <p className="form-message">{message}</p>}
+        {error && <p className="error-message">{error}</p>}
+        {success && <p className="success-message">{success}</p>}
 
         <button type="submit" className="submit-button">Login</button>
       </form>
