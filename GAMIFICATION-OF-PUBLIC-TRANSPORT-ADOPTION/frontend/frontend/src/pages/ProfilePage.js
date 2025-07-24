@@ -32,6 +32,7 @@ const ProfilePage = () => {
 
         <div className="profile-card">
           <p className="profile-info"><strong>Username:</strong> {username}</p>
+          <p className="profile-info"><strong>Email:</strong> {email}</p>
 
           <button className="logout-button" onClick={handleLogout}>Logout</button>
         </div>
