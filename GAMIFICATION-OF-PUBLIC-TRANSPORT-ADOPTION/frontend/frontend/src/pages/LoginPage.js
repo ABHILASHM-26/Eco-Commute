@@ -1,9 +1,11 @@
+// ✅ All imports go here at the top
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import './LoginPage.css';
-import API_BASE_URL from '../config'; // ✅ Import API base URL
+import API_BASE_URL from '../config'; // ✅ RIGHT PLACE
+
 
 const LoginPage = () => {
   const navigate = useNavigate();
