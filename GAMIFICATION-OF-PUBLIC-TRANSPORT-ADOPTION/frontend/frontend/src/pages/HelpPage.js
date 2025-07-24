@@ -42,7 +42,7 @@ const HelpPage = () => {
 
         <section>
           <h2>👤 Profile</h2>
-          <p>View your email,and your Username.</p>
+          <p>View your email, and your Username.</p>
         </section>
 
         <button className="top-button" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -51,9 +51,39 @@ const HelpPage = () => {
 
         <div className="contact-support">
           <h3>Contact Support</h3>
-          <a href="mailto:abhilashm13344@gmail.com" className="help-link">📧 Email Support</a>
-          <a href="tel:+916300628796" className="help-link">📞 Call Support</a>
-          <a href="https://wa.me/916300628796" target="_blank" rel="noopener noreferrer" className="help-link">💬 WhatsApp Support</a>
+          <a
+            href="mailto:abhilashm13344@gmail.com"
+            className="help-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            📧 Email Support
+          </a>
+          <a href="tel:+919014578545" className="help-link">📞 Call Support</a>
+          <a
+            href="https://wa.me/919014578545"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="help-link"
+          >
+            💬 WhatsApp Support
+          </a>
+          <a
+            href="https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="help-link"
+          >
+            🔗 LinkedIn
+          </a>
+          <a
+            href="https://github.com/ABHILASHM-26"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="help-link"
+          >
+            💻 GitHub
+          </a>
         </div>
       </div>
     </div>
