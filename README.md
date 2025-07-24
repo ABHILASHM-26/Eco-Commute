@@ -33,6 +33,12 @@ To encourage a sustainable shift from private vehicle usage to public transporta
 - For Frontend :
 - npm install <for installing necessary node modules and packages>
 - npm start
+
+  I made this project available live over internet.
+    Live Links :
+    Frontend (Vercel): Paste your deployed frontend URL (https://eco-commute-psi.vercel.app/)
+    Backend (Render): Paste your deployed backend URL (https://eco-commute.onrender.com/)
+- 
 ## 📞 Contact
 
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out:
@@ -43,4 +49,4 @@ If you have any questions, suggestions, or would like to collaborate, feel free 
 - **LinkedIn**: [https://www.linkedin.com/in/Abhilash M](https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
 - **GitHub**: [github.com/ABHILASHM-26](https://github.com/ABHILASM-26)
 
-We’re always open to feedback and partnerships to make public transport better and greener!
+I Am always open to feedback and partnerships to make public transport better and greener!
