@@ -12,7 +12,7 @@ const LoginPage = () => {
     password: ''
   });
 
-  const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,15 +22,19 @@ const LoginPage = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${API_BASE_URL}/api/users/login/`, formData); // ✅ Updated URL
+      const response = await axios.post(`${API_BASE_URL}/api/users/login/`, formData);
       if (response.status === 200) {
-        localStorage.setItem('accessToken', response.data.token);
+        localStorage.setItem('token', response.data.token); // ✅ Use consistent key 'token'
         localStorage.setItem('username', response.data.name || formData.email);
-        setError('');
-        navigate('/');
+        localStorage.setItem('email', formData.email);
+        setMessage('✅ Login successful! Redirecting to home page...');
+
+        setTimeout(() => {
+          navigate('/');
+        }, 1500); // ⏳ Wait for message to show
       }
     } catch (err) {
-      setError('Login failed. Please check your credentials.');
+      setMessage('❌ Login failed. Please check your credentials.');
     }
   };
 
@@ -62,7 +66,7 @@ const LoginPage = () => {
           />
         </div>
 
-        {error && <p className="error-message">{error}</p>}
+        {message && <p className="form-message">{message}</p>}
 
         <button type="submit" className="submit-button">Login</button>
       </form>
