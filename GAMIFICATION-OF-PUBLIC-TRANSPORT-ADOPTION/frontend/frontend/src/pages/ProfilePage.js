@@ -17,7 +17,7 @@ const ProfilePage = () => {
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem('accessToken');  // ✅ match the key used in LoginPage.js
+    localStorage.removeItem('token');
     localStorage.removeItem('username');
     localStorage.removeItem('email');
     navigate('/login');
@@ -26,14 +26,11 @@ const ProfilePage = () => {
   return (
     <div className="profile-page">
       <Navbar />
-
       <div className="profile-container">
         <h1 className="page-title">Profile</h1>
-
         <div className="profile-card">
-
+          <p className="profile-info"><strong>Username:</strong> {username}</p>
           <p className="profile-info"><strong>Email:</strong> {email}</p>
-
           <button className="logout-button" onClick={handleLogout}>Logout</button>
         </div>
       </div>
