@@ -2,19 +2,20 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import '../App.css'; // Import your existing styles
+import '../App.css';
 import './RideBookingPage.css';
+import API_BASE_URL from '../config'; // ✅ Import base URL
 
 const RideBookingPage = () => {
   const [pickupLocation, setPickupLocation] = useState('');
   const [dropLocation, setDropLocation] = useState('');
   const [message, setMessage] = useState('');
-  const [ticketId, setTicketId] = useState(null); // New state to store ride ID
+  const [ticketId, setTicketId] = useState(null);
 
   const handleBookRide = async () => {
     try {
       const token = localStorage.getItem('token');
-      
+
       if (!token) {
         setMessage('Please login first.');
         return;
@@ -27,7 +28,7 @@ const RideBookingPage = () => {
       };
 
       const response = await axios.post(
-        'http://localhost:8000/api/rides/book/',
+        `${API_BASE_URL}/api/rides/book/`, // ✅ Replaced hardcoded URL
         {
           pickup_location: pickupLocation,
           drop_location: dropLocation,
@@ -36,7 +37,7 @@ const RideBookingPage = () => {
       );
 
       if (response.status === 201) {
-        const rideId = response.data.id; // Get the ride ID from response
+        const rideId = response.data.id;
         setTicketId(rideId);
         setMessage(`🎉 Ride booked successfully! Your Ticket ID is ${rideId}`);
         setPickupLocation('');
@@ -46,7 +47,7 @@ const RideBookingPage = () => {
       console.error('Booking error:', error.response?.data || error.message);
       const errorDetail = error.response?.data?.detail || 'Please try again.';
       setMessage(`❌ Ride booking failed.`);
-      setTicketId(null); // Clear ticketId on failure
+      setTicketId(null);
     }
   };
 
@@ -69,17 +70,17 @@ const RideBookingPage = () => {
           onChange={(e) => setDropLocation(e.target.value)}
           className="input-field"
         />
-        <button 
-          onClick={handleBookRide} 
-          className="submit-button"
-        >
+        <button onClick={handleBookRide} className="submit-button">
           Book Ride
         </button>
       </div>
 
-      {message && <p className={`message ${message.includes('failed') ? 'error' : 'success'}`}>{message}</p>}
+      {message && (
+        <p className={`message ${message.includes('failed') ? 'error' : 'success'}`}>
+          {message}
+        </p>
+      )}
 
-      {/* Show Ticket ID separately if available */}
       {ticketId && (
         <div className="ticket-id">
           🎫 Your Ticket ID: {ticketId}
@@ -93,7 +94,7 @@ const RideBookingPage = () => {
         </p>
 
         <MapContainer
-          center={[17.9784, 79.5941]} // Center at Warangal
+          center={[17.9784, 79.5941]}
           zoom={13}
           className="leaflet-map"
         >
