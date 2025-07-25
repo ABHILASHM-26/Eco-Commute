@@ -38,12 +38,13 @@ To encourage a sustainable shift from private vehicle usage to public transporta
     Live Links :
     Frontend (Vercel): Paste your deployed frontend URL (https://eco-commute-psi.vercel.app/)
     Backend (Render): Paste your deployed backend URL (https://eco-commute.onrender.com/)
+    The admin side of this application can be accessed using URL (https://eco-commute.onrender.com/admin)
 - 
 ## 📞 Contact
 
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out:
 
-- **Name**: Abhilash M  
+- **Name**:  Abhilash M 
 - **Email**: abhilashm1344@gmail.com 
 - **Phone**: +91-9014578545
 - **LinkedIn**: [https://www.linkedin.com/in/Abhilash M](https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
