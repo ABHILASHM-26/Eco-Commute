@@ -5,7 +5,7 @@ import RegisterPage from './pages/RegisterPage';
 import RideBookingPage from './pages/RideBookingPage';
 import BadgesPage from './pages/BadgePage';
 import CarbonEmissionsPage from './pages/CarbonEmissionsPage';
-import Dashboard from './components/Dashboard'; // If you have a Dashboard
+import Dashboard from './components/Dashboard'; 
 import HomeButton from './components/HomeButton';
 import LoginPage from './pages/LoginPage';
 import TokenRedemptionPage from './pages/TokenRedemptionPage';
@@ -17,9 +17,9 @@ function App() {
   
   return (
     <Router>
-        {/* Show HomeButton always */}
+        {}
         <HomeButton/>
-      <MenuButton /> {/* new */}
+      <MenuButton /> {}
       <Routes>
         <Route path="/login" element={<LoginPage />} /> {'http://localhost:8000/api/users/login/'}
         <Route path="/" element={<HomePage />} />
