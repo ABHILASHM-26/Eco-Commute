@@ -7,6 +7,6 @@ urlpatterns = [
     path('buses/', BusListView.as_view()),
     path('book/', BookRideView.as_view()),
     path('my-rides/', UserRidesView.as_view()),
-    path('ride-booking/', BookRideBookingView.as_view()),  # 👈 NEW endpoint
+    path('ride-booking/', BookRideBookingView.as_view()),  
     path('verify-ticket/', views.verify_ticket, name='verify_ticket'),
 ]
