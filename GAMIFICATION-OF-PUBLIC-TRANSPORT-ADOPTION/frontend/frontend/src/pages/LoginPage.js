@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import './LoginPage.css';
-import API_BASE_URL from '../config'; // ✅ Make sure this is correct
+import API_BASE_URL from '../config'; 
 
 const LoginPage = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
