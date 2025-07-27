@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 import './RegisterPage.css';
-import API_BASE_URL from '../config'; // ✅ Import the API base URL
+import API_BASE_URL from '../config'; 
 
 const RegisterPage = () => {
   const [formData, setFormData] = useState({
