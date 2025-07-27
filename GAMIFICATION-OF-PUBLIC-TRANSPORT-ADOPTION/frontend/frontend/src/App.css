@@ -1,4 +1,4 @@
-/* Base styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Token Redemption Page */
+
 .page-container {
   background: linear-gradient(to right, #dcdcdc, #e6e6e6, #f2f2f2);
   min-height: 100vh;
@@ -45,7 +45,7 @@ p {
   font-weight: normal;
 }
 
-/* Home page container */
+
 .home-page {
   background-color: #fff;
   color: #333;
@@ -54,7 +54,7 @@ p {
   min-height: 100vh;
 }
 
-/* --- Navbar styles --- */
+
 nav {
   position: fixed;
   top: 120px;
@@ -88,7 +88,7 @@ nav ul li a:hover {
   background: linear-gradient(135deg, #bcbcbc, #999);
 }
 
-/* --- Banner styles --- */
+
 .home-banner {
   background: linear-gradient(to right, #d3d3d3, #c0c0c0, #a9a9a9);
   padding: 50px 20px;
@@ -130,7 +130,7 @@ nav ul li a:hover {
   height: auto;
 }
 
-/* --- Top right buttons --- */
+
 .top-buttons {
   position: absolute;
   top: 20px;
@@ -183,7 +183,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-/* Footer */
+
 .home-footer {
   background: linear-gradient(to right, #d3d3d3, #c0c0c0, #a9a9a9);
   padding: 15px 30px;
@@ -207,7 +207,6 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* --- Register Page styles --- */
 .register-page {
   text-align: center;
   padding: 60px 20px;
@@ -237,7 +236,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-/* --- Badges Page styles --- */
+
 .badges-page {
   text-align: center;
   padding: 60px 20px;
@@ -271,7 +270,7 @@ nav ul li a:hover {
   transform: scale(1.1);
 }
 
-/* --- Leaderboard styles --- */
+
 .leaderboard-page {
   background: linear-gradient(to right, #f0f0f0, #dcdcdc, #c0c0c0);
   color: #222;
@@ -302,7 +301,7 @@ nav ul li a:hover {
   color: #888;
 }
 
-/* --- Profile Page styles --- */
+
 .profile-page {
   background: linear-gradient(to right, #f9f9f9, #424141);;
   min-height: 100vh;
@@ -340,7 +339,7 @@ nav ul li a:hover {
   background: linear-gradient(135deg, #aaaaaa, #777);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .register-form {
     width: 90%;
