@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import '../App.css'; // Ensure global styles are applied
-import './TokenRedemption.css'; // Import specific Token Redemption page styles
+import '../App.css'; 
+import './TokenRedemption.css'; 
 
 function TokenRedemptionPage() {
   return (
