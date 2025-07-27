@@ -1,4 +1,4 @@
-/* Token Redemption Page */
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 }
 
 .form-container {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -24,14 +24,14 @@
 
 h2 {
   font-size: 1.8rem;
-  color: #333; /* Dark grey color */
+  color: #333; 
   margin-bottom: 20px;
   text-align: center;
 }
 
 p {
   font-size: 1.1rem;
-  color: #555; /* Lighter grey for paragraph */
+  color: #555; 
   text-align: center;
   line-height: 1.5;
 }
@@ -46,13 +46,13 @@ p {
 }
 
 .success {
-  background-color: #d4edda; /* Light green for success messages */
-  color: #155724; /* Dark green for success message text */
+  background-color: #d4edda; 
+  color: #155724; 
 }
 
 .error {
-  background-color: #f8d7da; /* Light red for error messages */
-  color: #721c24; /* Dark red for error message text */
+  background-color: #f8d7da; 
+  color: #721c24; 
 }
 
 @media (max-width: 768px) {
