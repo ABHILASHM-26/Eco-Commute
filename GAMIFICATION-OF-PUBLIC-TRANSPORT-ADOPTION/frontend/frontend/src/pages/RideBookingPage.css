@@ -1,4 +1,4 @@
-/* Ride Booking Page */
+
 .ride-booking-page {
   background: linear-gradient(to right, #f9f9f9, #424141);
   color: #333;
@@ -71,11 +71,11 @@ button.submit-button:hover {
 }
 
 .success {
-  color: #4caf50; /* Green for success */
+  color: #4caf50; 
 }
 
 .error {
-  color: #f44336; /* Red for errors */
+  color: #f44336;
 }
 
 .ticket-id {
