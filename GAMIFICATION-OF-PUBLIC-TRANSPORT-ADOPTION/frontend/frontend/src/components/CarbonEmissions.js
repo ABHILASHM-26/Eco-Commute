@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // Ensure this includes the base/global styles
+import '../App.css'; 
 
 const CarbonEmissions = () => {
   return (
