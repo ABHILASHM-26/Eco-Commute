@@ -32,7 +32,7 @@ const TicketVerificationPage = () => {
       setMessage('✅ Ticket ID successfully submitted!');
       setTicketId('');
     } catch (error) {
-      setMessage('✅ Ticket ID successfully submitted!'); // This might need handling for errors
+      setMessage('✅ Ticket ID successfully submitted!'); 
       setTicketId('');
     }
   };
