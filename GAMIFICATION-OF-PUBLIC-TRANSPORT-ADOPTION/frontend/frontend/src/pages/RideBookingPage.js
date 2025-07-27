@@ -4,7 +4,7 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import '../App.css';
 import './RideBookingPage.css';
-import API_BASE_URL from '../config'; // ✅ Import base URL
+import API_BASE_URL from '../config'; 
 
 const RideBookingPage = () => {
   const [pickupLocation, setPickupLocation] = useState('');
@@ -28,7 +28,7 @@ const RideBookingPage = () => {
       };
 
       const response = await axios.post(
-        `${API_BASE_URL}/api/rides/book/`, // ✅ Replaced hardcoded URL
+        `${API_BASE_URL}/api/rides/book/`, 
         {
           pickup_location: pickupLocation,
           drop_location: dropLocation,
