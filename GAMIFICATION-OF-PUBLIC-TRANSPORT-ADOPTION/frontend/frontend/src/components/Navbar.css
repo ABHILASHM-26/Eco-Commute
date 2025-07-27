@@ -1,19 +1,19 @@
-/* Navbar.css */
+
 .navbar {
     position: fixed;
     top: 0;
-    right: -250px; /* Hidden by default (slide out) */
+    right: -250px; 
     width: 250px;
     height: 100%;
     background-color: #d5d5d5;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease; /* Smooth slide */
-    padding-top: 60px; /* Adjust if you have top bar */
+    transition: right 0.3s ease; 
+    padding-top: 60px; 
     z-index: 998;
   }
   
   .navbar.open {
-    right: 0; /* Slide in */
+    right: 0; 
   }
   
   .navbar ul {
