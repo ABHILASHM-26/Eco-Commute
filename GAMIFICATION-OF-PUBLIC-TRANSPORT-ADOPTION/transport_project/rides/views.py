@@ -51,7 +51,7 @@ class BookRideBookingView(generics.CreateAPIView):
         ride_booking = serializer.save(user=self.request.user)
         ride_booking.ticket_id = ride_booking.generate_ticket_id()
         ride_booking.save()
-# rides/views.py
+
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -65,13 +65,10 @@ def verify_ticket(request):
     if not ticket_id:
         return Response({"error": "Ticket ID is required."}, status=status.HTTP_400_BAD_REQUEST)
 
-    # Validate ticket format
+
     import re
     pattern ="/^[0-9]{7}$/"
     if not re.match(pattern, ticket_id):
         return Response({"error": "Invalid Ticket ID format."}, status=status.HTTP_400_BAD_REQUEST)
-
-    # Save or process ticket ID if needed
-    # (Here we just return success, but you can also save it to the database if you want)
 
     return Response({"message": "Ticket submitted successfully."}, status=status.HTTP_200_OK)
