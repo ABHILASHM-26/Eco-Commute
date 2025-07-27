@@ -1,5 +1,4 @@
 from django.shortcuts import render
-# Create your views here.
 from rest_framework import generics, permissions
 from .models import Reward
 from .serializers import RewardSerializer
