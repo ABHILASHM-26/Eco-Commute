@@ -1,4 +1,4 @@
-/* Register Page */
+
 .register-page {
   background: linear-gradient(to right, #f9f9f9, #323030);
   color: #333;
@@ -79,16 +79,16 @@ button.submit-button:hover {
   background: linear-gradient(135deg, #bcbcbc, #999);
 }
 
-/* Error and Success Messages */
+
 .error-message, .success-message {
   font-size: 1rem;
-  color: #f44336; /* red for errors */
+  color: #f44336; 
   margin-top: 15px;
   font-weight: bold;
 }
 
 .success-message {
-  color: #4caf50; /* green for success */
+  color: #4caf50; 
 }
 
 @media (max-width: 768px) {
