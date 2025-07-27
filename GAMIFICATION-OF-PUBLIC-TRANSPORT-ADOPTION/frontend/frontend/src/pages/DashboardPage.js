@@ -1,7 +1,7 @@
 import React from 'react';
 import Dashboard from '../components/Dashboard';
 import Navbar from '../components/Navbar';
-import '../App.css'; // ensure styles are applied
+import '../App.css'; 
 
 function DashboardPage() {
   return (
