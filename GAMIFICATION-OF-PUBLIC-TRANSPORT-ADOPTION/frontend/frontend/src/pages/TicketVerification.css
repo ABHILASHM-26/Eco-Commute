@@ -1,16 +1,16 @@
-/* Ticket Verification Page Styles */
+
 
 .page-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 20px;
-  background: linear-gradient(to right, #f9f9f9, #424141); /* Light grey background for the full page */
+  background: linear-gradient(to right, #f9f9f9, #424141); 
   min-height: 100vh;
 }
 
 .form-container {
-  background-color: #fffcfc; /* White background for form box */
+  background-color: #fffcfc; 
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -21,7 +21,7 @@
 
 .form-title {
   font-size: 2rem;
-  color: #333; /* Dark grey for title */
+  color: #333; 
   margin-bottom: 25px;
   text-align: center;
 }
@@ -54,7 +54,7 @@
 
 .form-button {
   padding: 10px;
-  background-color: #2a7a51; /* Blue button */
+  background-color: #2a7a51; 
   color: white;
   border: none;
   border-radius: 10px;
@@ -64,7 +64,7 @@
 }
 
 .form-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 .form-message {
@@ -74,7 +74,7 @@
   text-align: center;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .form-container {
     padding: 25px;
