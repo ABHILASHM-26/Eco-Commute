@@ -44,7 +44,6 @@ def get_tokens_for_user(user):
         'access': str(refresh.access_token),
     }
 
-# Serializer for User Registration
 class RegisterSerializer(ModelSerializer):
     email = EmailField(required=True)
     name = CharField(required=True)
@@ -60,11 +59,10 @@ class RegisterSerializer(ModelSerializer):
             name=validated_data['name'],
             password=validated_data['password']
         )
-        # Create user profile
+
         UserProfile.objects.create(user=user)
         return user
 
-# API View for Registration
 class RegisterView(APIView):
     permission_classes = [AllowAny]
 
