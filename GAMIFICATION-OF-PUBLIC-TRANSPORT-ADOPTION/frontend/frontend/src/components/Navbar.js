@@ -1,7 +1,7 @@
-// Navbar.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // IMPORTANT: import css
+import './Navbar.css'; 
 
 function Navbar({ isOpen, toggleNavbar }) {
   return (
