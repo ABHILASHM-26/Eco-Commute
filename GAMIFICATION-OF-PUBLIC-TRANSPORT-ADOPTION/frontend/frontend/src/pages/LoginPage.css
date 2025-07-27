@@ -1,4 +1,4 @@
-/* Login Page Styling */
+
 .login-page {
   display: flex;
   flex-direction: column;
@@ -11,13 +11,13 @@
 
 .welcome-text {
   font-size: 2rem;
-  color: #333; /* Dark grey text */
+  color: #333; 
   margin-bottom: 20px;
   text-align: center;
 }
 
 .login-form {
-  background-color: #ffffff; /* White background */
+  background-color: #ffffff; 
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@
 
 .form-label {
   font-size: 1.1rem;
-  color: #f0ecec; /* Dark grey for labels */
+  color: #f0ecec; 
   margin-bottom: 5px;
 }
 
@@ -43,28 +43,28 @@
   width: 100%;
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #989696; /* Light grey border */
+  border: 1px solid #989696; 
   border-radius: 8px;
   margin-bottom: 10px;
-  background-color: #7e7c7c; /* Light background */
+  background-color: #7e7c7c; 
 }
 
 .form-input:focus {
-  border-color: #007bff; /* Blue border on focus */
+  border-color: #007bff; 
   outline: none;
 }
 
 .error-message {
-  color: #721c24; /* Dark red for error messages */
-  background-color: #f8d7da; /* Light red background */
+  color: #721c24; 
+  background-color: #f8d7da; 
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
 }
 
 .success-message {
-  color: #155724; /* Dark green for success messages */
-  background-color: #d4edda; /* Light green background */
+  color: #155724; 
+  background-color: #d4edda; 
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
@@ -72,7 +72,7 @@
 
 .submit-button {
   padding: 12px 20px;
-  background-color: #007bff; /* Blue background for the button */
+  background-color: #007bff; 
   color: white;
   border: none;
   border-radius: 8px;
@@ -83,7 +83,7 @@
 }
 
 .submit-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3; 
 }
 
 @media (max-width: 768px) {
