@@ -45,9 +45,9 @@ To encourage a sustainable shift from private vehicle usage to public transporta
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out:
 
 - **Name**:  Abhilash M 
-- **Email**: abhilashm1344@gmail.com 
+- **Email**: abhilashm1344@gmail.com
 - **Phone**: +91-9014578545
-- **LinkedIn**: [https://www.linkedin.com/in/Abhilash M](https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) 
+- **LinkedIn**: [https://www.linkedin.com/in/Abhilash M](https://www.linkedin.com/in/abhilashmellacheruvu/) 
 - **GitHub**: [github.com/ABHILASHM-26](https://github.com/ABHILASM-26)
 
 I Am always open to feedback and partnerships to make public transport better and greener!
