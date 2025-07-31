@@ -1,39 +1,63 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #d5d5d5;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding-top: 60px;
+  z-index: 998;
+  overflow-y: auto; 
+}
+
+.navbar.open {
+  right: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.navbar li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Link styles */
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+}
+
+
+.navbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.navbar::-webkit-scrollbar-track {
+  background: transparent;
+}
 
 .navbar {
-    position: fixed;
-    top: 0;
-    right: -250px; 
-    width: 250px;
-    height: 100%;
-    background-color: #d5d5d5;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease; 
-    padding-top: 60px; 
-    z-index: 998;
-  }
-  
-  .navbar.open {
-    right: 0; 
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar li {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-  }
-  
-  .navbar a:hover {
-    color: #ffffff;
-  }
-  
+  scroll-behavior: smooth;
+}
