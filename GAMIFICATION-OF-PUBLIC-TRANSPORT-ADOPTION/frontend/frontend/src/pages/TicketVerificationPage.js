@@ -11,23 +11,30 @@ const TicketVerificationPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validate 7-digit natural number
     const ticketPattern = /^[0-9]{7}$/;
     if (!ticketPattern.test(ticketId)) {
       setMessage('❌ Invalid ticket format. Please enter a 7-digit number.');
       return;
     }
 
+    const token = localStorage.getItem('token');
+    if (!token) {
+      setMessage('❌ Please log in first to submit a ticket ID.');
+      return;
+    }
+
     try {
-      const token = localStorage.getItem('token');
       const config = {
         headers: {
           Authorization: `Token ${token}`,
         },
       };
 
-      // ✅ Changed localhost to deployed URL
-      await axios.post('https://eco-commute.onrender.com/api/rides/verify-ticket/', { ticket_id: ticketId }, config);
+      await axios.post(
+        'https://eco-commute.onrender.com/api/rides/verify-ticket/',
+        { ticket_id: ticketId },
+        config
+      );
 
       setMessage('✅ Ticket ID successfully submitted!');
       setTicketId('');
