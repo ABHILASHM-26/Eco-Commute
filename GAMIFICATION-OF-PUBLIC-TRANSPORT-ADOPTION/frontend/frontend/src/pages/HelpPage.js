@@ -69,7 +69,7 @@ const HelpPage = () => {
             💬 WhatsApp Support
           </a>
           <a
-            href="https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://www.linkedin.com/in/abhilashmellacheruvu/"
             target="_blank"
             rel="noopener noreferrer"
             className="help-link"
