@@ -54,7 +54,7 @@ function HomePage() {
       <footer className="home-footer">
   <p>🌿 EcoCommute &copy; 2025 | Making Public Transport Rewarding</p>
   <a
-    href="https://www.linkedin.com/in/abhilash-m-35ab682a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    href="https://www.linkedin.com/in/abhilashmellacheruvu/"
     target="_blank"
     rel="noopener noreferrer"
     className="linkedin-link"
