@@ -1,8 +1,8 @@
-# 🚍 EcoCommute – Gamification-Based Public Transport Adoption
+#  EcoCommute – Gamification-Based Public Transport Adoption
 
 EcoCommute is a web application designed to promote public transport usage through **gamification**. It rewards users with points and tokens for every kilometer they travel using public transport, helping reduce traffic congestion and carbon emissions in urban areas.
 
-## 🌟 Project Goal
+##  Project Goal
 
 To encourage a sustainable shift from private vehicle usage to public transportation by making the process rewarding and interactive.
 
@@ -14,7 +14,7 @@ To encourage a sustainable shift from private vehicle usage to public transporta
 - **Authentication**: Email + Password
 - **Other**: Leaflet (for maps), CSS Modules
 
-## ✅ Features Developed So Far
+##  Features Developed So Far
 
 - User registration & login
 - Home page with app overview and team message
@@ -25,7 +25,7 @@ To encourage a sustainable shift from private vehicle usage to public transporta
 - Film Location Finder backend using Node.js and MongoDB (migrating data)
 - Help page with usage instructions and contact support links
 - LinkedIn footer link added to home page
-- Theme redesigned to use light, simple colors
+- Theme designed  using light, simple colors
 
 - And To Run This projects in your systems the commands you need to use are :
 - For Backend :
@@ -42,7 +42,7 @@ To encourage a sustainable shift from private vehicle usage to public transporta
   
     The admin side of this application can be accessed using URL (https://eco-commute.onrender.com/admin)
   
-## 📞 Contact
+## Contact
 
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out:
 
